@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.starkogi.mamamboga"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'CONSUMER_KEY', '"UEJG4FiYLera3EbVh37AVTzbPnF6tbwh"'
+        it.buildConfigField 'String', 'CONSUMER_SECRET', '"hIJ1U4knShLJEYIh"'
+//
+//        it.buildConfigField 'String', 'BUSINESS_SHORT_CODE', '"174379"'
+//        it.buildConfigField 'String', 'PASSKEY', '"bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"'
+//        it.buildConfigField 'String', 'TRANSACTION_TYPE', '"CustomerPayBillOnline"'
+//        it.buildConfigField 'String', 'PARTYB', '"174379"'
+
+
+    }
+    android {
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //User Added Dependencies
+    compile 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+
+
+    // Required only if Facebook login support is required
+    // Find the latest Facebook SDK releases here: https://goo.gl/Ce5L94
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    // Required only if Twitter login support is required
+    // Find the latest Twitter SDK releases here: https://goo.gl/E5wZvQ
+    // Find the latest Twitter SDK releases here: https://goo.gl/E5wZvQ
+    implementation('com.twitter.sdk.android:twitter-core:3.3.0@aar') { transitive = true }
+
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

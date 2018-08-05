@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "601338612086",
+    "firebase_url": "https://mamamboga-9f9ee.firebaseio.com",
+    "project_id": "mamamboga-9f9ee",
+    "storage_bucket": "mamamboga-9f9ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601338612086:android:6bcbe5661c38f3bf",
+        "android_client_info": {
+          "package_name": "com.starkogi.mamamboga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601338612086-j7db0mfe6tnl96ijq9c33k0bt6eiikm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.starkogi.mamamboga",
+            "certificate_hash": "d48a742731f25a080ebbd2a431783227a12d1078"
+          }
+        },
+        {
+          "client_id": "601338612086-fd4i9rpgskrechhdfgcs7ai35gnavsg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbM9el-_ACPu0x2k2TrNmb__ZeAfR8PL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601338612086-fd4i9rpgskrechhdfgcs7ai35gnavsg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
